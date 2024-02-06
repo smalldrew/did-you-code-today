@@ -8,6 +8,6 @@ Sends a text message if you haven't pushed to Github in the past day
 
 ## todo
 
-- [ ] work with private repositories
-- [ ] fix minor bugs
-- [ ] quality of life improvements
+- [x] work with private repositories
+- [x] fix minor bugs
+- [x] quality of life improvements
