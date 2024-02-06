@@ -22,14 +22,16 @@ def check_code_today(username: str) -> bool:
     return None
 
 
-def check(username: str) -> None:
+def check(username: str, phone_number: int) -> None:
     """Sends a message if you didn't code. Otherwise, it sends a good job message."""
     if check_code_today(username):
-        print('LOG: Sent good job message.')
-        SMS.send_text('Good job. You coded today.')
+        print(f'{username} coded today.')
+        SMS.send_text('Good job. You coded today.', phone_number)
+        print('Sent good job message.\n')
     else:
-        print('LOG: Sent angry message.')
-        SMS.send_text('GO CODE RIGHT NOW OR YOU WILL DIE.')
+        print(f'{username} did not code today')
+        SMS.send_text('You did not code today. Go code right now.', phone_number)
+        print('Sent a reminder\n')
 
 
 if __name__ == '__main__':
