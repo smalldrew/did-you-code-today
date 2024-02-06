@@ -8,16 +8,7 @@ from bs4 import BeautifulSoup
 USERNAME = 'smalldrew'  # put your username here
 
 def check_code_today(username: str) -> bool:
-    """
-    Check if a user with the given username has made any commits on GitHub today.
-    
-     Parameters:
-        username (str): The GitHub username to check.
-
-    Returns:
-        bool: True if the user has made commits today, False otherwise. 
-        Returns None if there is an issue with the request to GitHub.
-    """
+    """Check if a user with the given username has made any commits on GitHub today."""
 
     url = f'https://github.com/{username}' 
     response = requests.get(url)
