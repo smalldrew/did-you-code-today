@@ -15,8 +15,8 @@ CARRIERS = {
     "sprint": "@messaging.sprintpcs.com"
 }
 
-def send_text(message, carrier='att'):
-    recipient = f'{PHONE_NUMBER}{CARRIERS[carrier]}'
+def send_text(message, phone_number=PHONE_NUMBER, carrier='att'):
+    recipient = f'{phone_number}{CARRIERS[carrier]}'
     server = smtplib.SMTP("smtp.gmail.com", 587)
     server.starttls()
     server.login(EMAIL, PASSWORD)
