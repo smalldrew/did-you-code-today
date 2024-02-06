@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 
 
 USERNAME = 'smalldrew'  # put your username here
+PHONE_NUMBER = 0000000000  # put your phone number here
 
 def check_code_today(username: str) -> bool:
     """Check if a user with the given username has made any commits on GitHub today."""
@@ -35,4 +36,4 @@ def check(username: str, phone_number: int) -> None:
 
 
 if __name__ == '__main__':
-    check(USERNAME)
+    check(USERNAME, PHONE_NUMBER)
