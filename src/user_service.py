@@ -1,7 +1,7 @@
 from github_scraper import check
 
 USERS = {
-    'smalldrew': 0000000000,  # put your username and phone number here
+    'placeholder username': 0000000000,
 }
 
 
